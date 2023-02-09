@@ -13,10 +13,11 @@ foreach ($_GET as $id => $val){
 echo '<input type="button" value="Say Hi!">';
  
 
-$f=fopen("test.json", "a");#open file
-fwrite($f, "this is a file.\n");#write something
-fwrite()
-fclose($f);#close file
+$f=fopen("test.json", "a");//open file
+fwrite($f, "this is a file.\n");//write something
+fwrite($f, "b");
+
+fclose($f);//close file
 echo "Saved";
 
 ?> 
